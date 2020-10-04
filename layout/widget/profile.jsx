@@ -46,7 +46,7 @@ class Profile extends Component {
                         </div>
                     </div>
                 </nav>
-                <nav class="level is-mobile">
+                {/* <nav class="level is-mobile">
                     <div class="level-item has-text-centered is-marginless">
                         <div>
                             <p class="heading">{counter.post.title}</p>
@@ -74,7 +74,7 @@ class Profile extends Component {
                 </nav>
                 {followLink ? <div class="level">
                     <a class="level-item button is-primary is-rounded" href={followLink} target="_blank" rel="noopener">{followTitle}</a>
-                </div> : null}
+                </div> : null} */}
                 {socialLinks ? this.renderSocialLinks(socialLinks) : null}
             </div>
         </div>;
