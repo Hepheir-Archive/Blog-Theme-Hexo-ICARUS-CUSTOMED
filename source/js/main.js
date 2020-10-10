@@ -17,7 +17,12 @@
         if ($('.justified-gallery > p > .gallery-item').length) {
             $('.justified-gallery > p > .gallery-item').unwrap();
         }
-        $('.justified-gallery').justifiedGallery();
+        $('.justified-gallery').justifiedGallery({
+            lastRow: 'justify',
+            captions: true,
+            margins: 2,
+            waitThumbnailsLoad: true
+        });
     }
 
     if (typeof moment === 'function') {
