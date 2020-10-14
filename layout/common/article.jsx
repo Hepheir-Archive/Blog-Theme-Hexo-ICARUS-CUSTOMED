@@ -81,7 +81,17 @@ module.exports = class extends Component {
                     </div> : null}
                     {/* Title */}
                     <h1 class="title is-3 is-size-4-mobile">
-                        {index ? <a class="link-muted" href={url_for(page.link || page.path)}>{page.title}</a> : page.title}
+                        {index ? <a class="link-muted" href={url_for(page.link || page.path)}>
+                            {page.title}&nbsp;
+                            {page.subtitle ? <shadow class="title is-4 is-size-5-mobile" style="display:inline-block;">
+                                {page.subtitle}
+                            </shadow> : null }
+                        </a> : <Fragment>
+                            {page.title}&nbsp;
+                            {page.subtitle ? <shadow class="title is-4 is-size-5-mobile" style="display:inline-block;">
+                                {page.subtitle}
+                            </shadow> : null }
+                        </Fragment>}
                     </h1>
                     {/* Content/Excerpt */}
                     <div class="content" dangerouslySetInnerHTML={{ __html: index && page.excerpt ? page.excerpt : page.content }}></div>
