@@ -1,5 +1,5 @@
 const logger = require('hexo-log')();
-const { Component, Fragment } = require('inferno');
+const { Component } = require('inferno');
 const view = require('hexo-component-inferno/lib/core/view');
 
 module.exports = class extends Component {
