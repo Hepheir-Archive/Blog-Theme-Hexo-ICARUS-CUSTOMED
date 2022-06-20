@@ -37,7 +37,7 @@
     "deepmerge": "^4.2.2",
     "hexo-component-inferno": "^0.14.0",
     "inferno": "^7.3.3",
-    "inferno-create-element": "^7.3.3",
+    "inferno-create-element": "^8.0.1",
     "moment": "^2.22.2",
     "semver": ">=5.0.0"
   },
